@@ -14,4 +14,8 @@ class Status extends Model
     protected $fillable = [
         'nome',
     ];
+
+    public function clientes() {
+        return $this->hasMany(Cliente::class);
+    }
 }
